@@ -28,7 +28,7 @@ public class GenerateNumbersController {
     List<Num> listOfNums = new ArrayList<>();
     ArrayList<Integer> listOfRandomNumbers = new ArrayList<Integer>();
 
-    for (int i = 0; i < 31; i++) listOfRandomNumbers.add(i);
+    for (int i = 1; i < 31; i++) listOfRandomNumbers.add(i);
     Collections.shuffle(listOfRandomNumbers);
 
     for (Integer i = 0; i < num; i++) {
