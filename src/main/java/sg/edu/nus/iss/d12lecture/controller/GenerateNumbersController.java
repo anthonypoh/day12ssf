@@ -12,7 +12,16 @@ import sg.edu.nus.iss.d12lecture.model.Num;
 
 @Controller
 @RequestMapping("/numbers")
-public class IndexController {
+public class GenerateNumbersController {
+
+  // =======================================================================
+  // You can also path like this, the form action would be /numbers/generate
+  // =======================================================================
+  // @GetMapping(path = "/generate")
+  // public String generate(@RequestParam Integer num, Model m) {
+  //   // add logic here
+  //   return "numbers";
+  // }
 
   @GetMapping(produces = { "text/html" })
   public String index(@RequestParam(required = true) Integer num, Model Nums) {
