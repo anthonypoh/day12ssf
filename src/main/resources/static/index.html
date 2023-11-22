@@ -16,9 +16,9 @@
         <h1>How many numbers do you wish to generate?</h1>
       </div>
     </div>
-    <form action="/numbers" class="row g-3">
+    <form action="/numbers" class="row g-3" method="GET">
       <div class="col-1">
-        <input type="number" name="num" class="form-control" min=1 max=31 />
+        <input type="number" name="num" class="form-control" value=1 min=1 max=31 />
       </div>
       <div class="col-md-auto">
         <button class="btn btn-primary" type="submit">Generate</button>
